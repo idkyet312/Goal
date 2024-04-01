@@ -1,0 +1,32 @@
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
+
+buildscript {
+    repositories {
+        google() // Google's Maven repository
+        mavenCentral() // Maven Central repository
+        ext.kotlin_version = '1.7.1' // Or use a newer version
+    }
+    dependencies {
+        //classpath 'com.android.tools.build:gradle:8.0.0' // Ensure you're using the latest version
+        //classpath 'com.google.gms:google-services:4.3.10' // Google Services plugin
+        //classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.20"
+        // NOTE: Do not place your application dependencies here; they belong in the individual module build.gradle files
+    }
+}

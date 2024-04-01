@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "963575129620",
+    "project_id": "goal-6a89f",
+    "storage_bucket": "goal-6a89f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963575129620:android:f56c5ad2c72fa7569ae901",
+        "android_client_info": {
+          "package_name": "com.example.test_drive"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBz7m1grwobGMmCxnAoM_T_M99hxijX7Jg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,8 @@
+{
+    "model": "claude-3-opus-20240229",
+    "max_tokens": 2048,
+    "stream": false,
+    "system": "sysprompt",
+    "messages": [
+    ]
+}
